@@ -1,0 +1,2 @@
+# Architecture
+The coordinator routes work to theory, computation, evidence, safety, and synthesis roles. Shared structured state preserves provenance and uncertainty. Consequential or externally submitted outputs require human approval.
