@@ -1,6 +1,4 @@
-def run(payload=None):
-    payload = payload or {}
-    return {"system":"F81","status":"reference_analysis_ready","input":payload,"human_review_required":True}
+from orchestration.orchestrator import run
 
 if __name__ == "__main__":
-    print(run())
+    print(run({"objective":"Formulate and review a physics research problem","evidence":[]}))

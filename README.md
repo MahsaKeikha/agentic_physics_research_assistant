@@ -1,15 +1,32 @@
 # Agentic Physics Research Assistant
 
-F81 in the Agentic AI Library. A safety-aware multi-agent reference system for physics research planning, derivation review, evidence tracking, computational checks, and human-reviewed scientific synthesis.
+F81 of the Agentic AI Library.
 
-## Architecture
-Specialized agents collaborate through explicit state, orchestration, evidence discipline, evaluation, observability, and human approval.
+A standalone multi agent reference system for physics research support with explicit problem formulation, theory analysis, computational reasoning, evidence discipline, uncertainty handling, reproducibility, and human review.
+
+## Actual implementation
+
+- [AGENTS](AGENTS)
+- [TOOLS](TOOLS)
+- [SKILLS](SKILLS)
+- [Orchestration](orchestration/orchestrator.py)
+- [Memory](memory/store.py)
+- [State](state/run_state.py)
+- [Schemas](schemas/context.schema.json)
+- [Safety](safety/policy.py)
+- [Evaluations](evals/evaluate.py)
+- [Benchmarks](benchmarks/cases.json)
+- [Tests](tests/test_orchestrator.py)
+- [Architecture](docs/ARCHITECTURE.md)
 
 ## Run
+
 ```bash
 python run.py
-python -m pytest -q
 ```
 
-## Author
-Mahsa Keikha
+## Test
+
+```bash
+python -m pytest -q
+```
