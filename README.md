@@ -1,32 +1,34 @@
-# Agentic Physics Research Assistant
+# F81 | Agentic Physics Research Assistant | L3 Gold Standard | v1.0
 
-F81 of the Agentic AI Library.
+A governed multi-agent reference system for physics research support with explicit problem formulation, theory analysis, computational reasoning, evidence discipline, uncertainty handling, reproducibility, and qualified human review.
 
-A standalone multi agent reference system for physics research support with explicit problem formulation, theory analysis, computational reasoning, evidence discipline, uncertainty handling, reproducibility, and human review.
+## Research pipeline
 
-## Actual implementation
+- Problem formulation
+- Theory analysis
+- Computational reasoning
+- Evidence review
+- Scientific reviewer
 
-- [AGENTS](AGENTS)
-- [TOOLS](TOOLS)
-- [SKILLS](SKILLS)
-- [Orchestration](orchestration/orchestrator.py)
-- [Memory](memory/store.py)
-- [State](state/run_state.py)
-- [Schemas](schemas/context.schema.json)
-- [Safety](safety/policy.py)
-- [Evaluations](evals/evaluate.py)
-- [Benchmarks](benchmarks/cases.json)
-- [Tests](tests/test_orchestrator.py)
-- [Architecture](docs/ARCHITECTURE.md)
+Tools and skills cover dimensional analysis, model selection, literature synthesis, uncertainty reasoning, reproducible research, equation registration, evidence tracking, reproducibility checks, uncertainty tables, and unit checking.
 
-## Run
+## Gold-standard research integrity
+
+F81 is fail closed. Research release requires reviewed problem formulation and assumptions, dimensional-consistency review, verified computation, evidence provenance, uncertainty review, reproducibility review, and explicit qualified human approval.
+
+Release is blocked for dimensional inconsistencies, failed computation verification, unsupported assumptions, missing evidence provenance, uncharacterized material uncertainty, reproducibility gaps, or unresolved contradictory evidence.
+
+The reference system cannot autonomously claim a result is proven or experimentally confirmed, fabricate evidence, hide uncertainty, or exercise autonomous scientific authority.
+
+## Verification gates
+
+CI runs on Python 3.10, 3.11, and 3.12 and requires:
 
 ```bash
+ruff check . --select E9,F63,F7,F82
+python -m pytest -q
+python evals/held_out.py
 python run.py
 ```
 
-## Test
-
-```bash
-python -m pytest -q
-```
+The behavioral verification layer includes eight direct research-integrity tests and a 10-scenario held-out suite.
